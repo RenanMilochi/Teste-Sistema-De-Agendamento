@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Agenda de Atendimentos - Profissional</h1>
+
+    <h2>Consultas Agendadas para Hoje</h2>
+    <table>
+        <tr>
+            <th>Horário</th>
+            <th>Nome do Cliente</th>
+            <th>Procedimento</th>
+        </tr>
+        <tr>
+            <td>09:00</td>
+            <td>Ana Souza</td>
+            <td>Consulta Geral</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td>Carlos Lima</td>
+            <td>Exame Cardiológico</td>
+        </tr>
+    </table>
+
+    <h2>Remarcar Atendimento</h2>
+    <form action="/remarcar" method="POST">
+        <label for="consulta">Escolha a consulta</label>
+        <select id="consulta" name="consulta" required>
+            <option value="consulta_1">Consulta 1</option>
+            <option value="consulta_2">Consulta 2</option>
+        </select>
+
+        <label for="nova_data">Nova Data</label>
+        <input type="date" id="nova_data" name="nova_data" required>
+
+        <button type="submit">Remarcar</button>
+    </form>
+</body>
+</html>

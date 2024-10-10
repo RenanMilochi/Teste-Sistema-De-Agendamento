@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clínica Vida Saudável</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Clínica Lótus Saúde">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#equipe">Nossa Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#agendamento" class="agendar-btn">Agende sua Consulta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Bem-vindo à Clínica Lótus Saúde</h1>
+            <p>Cuidados completos com sua saúde e bem-estar.</p>
+            <a href="teladelogin.html" class="cta-button">Agendar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Na Clínica Lótus Saúde, oferecemos serviços médicos de alta qualidade com uma equipe dedicada e qualificada. Nosso objetivo é garantir que você receba o melhor atendimento para cuidar da sua saúde e da sua família.</p>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Clínica Geral</h3>
+                <p>Consultas para diagnósticos gerais e encaminhamentos para especialistas.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cardiologia</h3>
+                <p>Cuidado especializado para o seu coração com exames e tratamentos avançados.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pediatria</h3>
+                <p>Atendimento especializado para a saúde dos seus pequenos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Ortopedia</h3>
+                <p>Tratamento de lesões e doenças relacionadas aos ossos, articulações e músculos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Equipe -->
+    <section id="equipe" class="team">
+        <h2>Nossa Equipe</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="doctor1.jpg" alt="Dr. Nome do médico aqui">
+                <h3>Dr. Nome do médico aqui</h3>
+                <p>Clínico Geral</p>
+            </div>
+            <div class="team-member">
+                <img src="doctor2.jpg" alt="Dr. Nome do médico aqui">
+                <h3>Dr. Nome do médico aqui</h3>
+                <p>Cardiologista</p>
+            </div>
+            <div class="team-member">
+                <img src="doctor3.jpg" alt="Dr. Nome do médico aqui">
+                <h3>Dr. Nome do médico aqui</h3>
+                <p>Pediatra</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="appointment">
+        <h2>Agende sua Consulta</h2>
+        <form action="/agendar" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="data">Data da Consulta</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="especialidade">Especialidade</label>
+            <select id="especialidade" name="especialidade" required>
+                <option value="clinica_geral">Clínica Geral</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="ortopedia">Ortopedia</option>
+            </select>
+
+            <button type="submit">Agendar Consulta</button>
+        </form>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@clinicaexemplo.com.br</p>
+        <p>Endereço: Rua da Saúde, 123 - São Paulo, SP</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Clínica Lótus Saúde - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Estilos básicos para a página da clínica */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #b155d8, #e6c4f3);
+
+}
+
+header {
+    background-color: #941f8e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+.cta-button {
+    background-color:  #941f8e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .services, .team, .appointment, .contact {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #b155d8, #e6c4f3);
+    margin: 20px 0;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color:  #941f8e;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #941f8e;
+    color: white;
+}
+
+
+/* Estilos para a tela de login */
+.login {
+    padding: 50px;
+    background-color: #e6c4f3;
+    text-align: center;
+}
+
+.login form {
+    display: inline-block;
+    background-color: #941f8e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.login input, .login select, .login button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login input, .login select {
+    width: 80%;
+}
+
+.login button {
+    background-color: white;
+    color: #941f8e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos para as telas de perfil */
+.admin, .cliente, .profissional {
+    padding: 50px;
+    background-color: #b155d8;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+.admin h2, .cliente h2, .profissional h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.admin p, .cliente p, .profissional p {
+    font-size: 1.2em;
+}
+
+/* Estilos para a tela de cadastro */
+.cadastro {
+    padding: 50px;
+    background-color: #e6c4f3;
+    text-align: center;
+}
+
+.cadastro form {
+    display: inline-block;
+    background-color: #941f8e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cadastro input, .cadastro select, .cadastro button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cadastro input, .cadastro select {
+    width: 80%;
+}
+
+.cadastro button {
+    background-color: white;
+    color: #941f8e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cadastro {
+    padding: 50px;
+    background-color: #e6c4f3;
+    text-align: center;
+}
+
+.cadastro form {
+    display: inline-block;
+    background-color: #941f8e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cadastro input, .cadastro select, .cadastro button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cadastro input, .cadastro select {
+    width: 80%;
+}
+
+.cadastro button {
+    background-color: white;
+    color: #941f8e;
+    font-weight: bold;
+    cursor: pointer;
+}
