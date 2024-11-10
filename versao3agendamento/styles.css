@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?spa') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ff8e8e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background: #e25454;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card h4 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+/* Estilização específica para a tela de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background: #f9f9f9; /* Fundo claro */
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura do formulário */
+}
+
+.login-form h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%; /* Preenche a largura total */
+    padding: 10px;
+    margin: 10px 0; /* Margem entre os inputs */
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.login-form input[type="submit"] {
+    background: #ff6b6b; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px;
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 100%; /* Preenche a largura total */
+}
+
+.login-form input[type="submit"]:hover {
+    background: #e25454; /* Cor do botão ao passar o mouse */
+}
+
+.login-form p {
+    text-align: center; /* Centraliza texto */
+    margin-top: 15px; /* Margem acima */
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e); /* Degradê de fundo */
+}
+
+/* Estilo para tela de login */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff8e8e, #ffc1c1);
+}
+
+.login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #ff8e8e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #e25454;
+}
+
+.login-form a {
+    color: #ff8e8e;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
