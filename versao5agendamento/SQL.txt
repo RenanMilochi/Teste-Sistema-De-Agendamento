@@ -1,0 +1,59 @@
+-- Criação do banco de dados
+CREATE DATABASE IF NOT EXISTS clinica_estetica;
+
+-- Seleção do banco de dados
+USE clinica_estetica;
+
+-- Tabela de usuários
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100),
+  email VARCHAR(100) UNIQUE,
+  senha VARCHAR(255),
+  telefone VARCHAR(20),
+  cpf VARCHAR(14) UNIQUE,
+  endereco VARCHAR(255),
+  data_nascimento DATE,
+  tipo ENUM('cliente', 'administrador') DEFAULT 'cliente'
+);
+
+-- Tabela de serviços
+CREATE TABLE IF NOT EXISTS servicos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    duracao INT NOT NULL, -- duração do serviço em minutos
+    preco DECIMAL(10, 2) NOT NULL
+);
+
+-- Tabela de status dos agendamentos
+CREATE TABLE IF NOT EXISTS status_agendamento (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(50) NOT NULL
+);
+
+-- Inserir os status possíveis na tabela 'status_agendamento'
+INSERT INTO status_agendamento (descricao) VALUES 
+('Aprovação pendente'),
+('Confirmado'),
+('Realizado'),
+('Cancelado');
+
+-- Tabela de agendamentos
+CREATE TABLE IF NOT EXISTS agendamentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_servico INT NOT NULL,
+    data DATE NOT NULL,
+    horario TIME NOT NULL,
+    status INT DEFAULT 1,  -- '1' será para 'Aprovação pendente' inicialmente
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+    FOREIGN KEY (id_servico) REFERENCES servicos(id),
+    FOREIGN KEY (status) REFERENCES status_agendamento(id)
+);
+
+-- Caso precise corrigir a coluna de status após inserção inicial, aqui está a versão correta:
+-- ALTER TABLE agendamentos MODIFY COLUMN status INT DEFAULT 1;
+
+-- Atualizar valores antigos para garantir consistência
+UPDATE agendamentos SET status = 1 WHERE status IS NULL;
